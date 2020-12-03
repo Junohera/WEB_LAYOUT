@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	#first {
+		position: relative;
+		width: 100%;
+		height: 200px;
+		border: 1px dashed black;
+	}
+	#first_text1 {
+		position: relative;
+		width: 400px;
+		height: 100px;
+		margin: 0 auto;
+		border: 1px solid blue;
+		font-size: 200%;
+		font-weight: bold;
+		line-height: 100px;
+		text-align: center;
+	}
+
+	#first_text2 {
+		position: relative;
+		margin: 0 auto;
+		width: 400px;
+		height: 100px;
+		border: 1px solid red;
+		font-size: 90%;
+		color: gray;
+		
+		/*... 멀티라인 텍스트 감춤*/
+		display: inline-block; 
+		overflow: hidden; 
+		text-overflow: ellipsis;
+		white-space: normal; 
+		line-height: 1.2;
+		text-align: left; 
+		word-wrap: break-word;
+		display: -webkit-box;
+		-webkit-line-clamp: 4;
+		-webkit-box-orient: vertical;
+	}
+</style>
+</head>
+<body>
+	<div id="first">
+		<div id="first_text1">Content02 Title</div>
+		<div id="first_text2">대통령은 법률이 정하는 바에 의하여 사면·감형 또는 복권을 명할 수 있다. 전직대통령의 신분과 예우에 관하여는 법률로 정한다. 타인의 범죄행위로 인하여 생명·신체에 대한 피해를 받은 국민은 법률이 정하는 바에 의하여 국가로부터 구조를 받을 수 있다. 국무총리·국무위원 또는 정부위원은 국회나 그 위원회에 출석하여 국정처리상황을 보고하거나 의견을 진술하고 질문에 응답할 수 있다. 국회는 정부의 동의없이 정부가 제출한 지출예산 각항의 금액을 증가하거나 새 비목을 설치할 수 없다. 헌법개정안은 국회가 의결한 후 30일 이내에 국민투표에 붙여 국회의원선거권자 과반수의 투표와 투표자 과반수의 찬성을 얻어야 한다.</div>
+	</div>
+</body>
+</html>
